@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Website</title>
+    <style>
+      /* Global styles /
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        / Navigation styles /
+        nav {
+            background-color: black; / Updated color /
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        / Page content styles */
+        .container{
+        /* margin-top: 45px;
+        padding: 20px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        }
+      .fle{
+        flex:1;
+      }
+      .f1{
+        align-self: center;
+      }
+      
+      .content{
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 10%;
+      }
+      #taskForm{
+        border-radius: px;
+        
+      }
+      button{
+        border-radius: 5px;
+      }
+      input{
+        width: 380px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="tasks.html">Tasks</a>
+      <a href="about.html">About Us</a>
+      <a href="Task_List.php">Task list </a>
+    </nav>
+        <div class="container">
+      <div class="content just" width="400px">
+        <div class="fle f1"><h1>Add a Task</h1></div>
+        <div class="fle f2" width="400px"><form id="taskForm" action="add_task.php" method="post">
+          <input
+            type="text"
+            id="taskInput"
+            name="task"
+            placeholder="Enter a task"
+            
+          />
+          <button type="submit">Add Task</button></div>
+        </form>
+      </div>
+    </div>
+</div>
+  </body>
+</html>
